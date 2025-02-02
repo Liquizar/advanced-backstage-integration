@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: payment-api
+  description: "API for payment processing"
+spec:
+  type: openapi
+  lifecycle: stable
+  owner: liquizar
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Payment API
+      version: 1.0.0
+    paths:
+      /payment:
+        get:
+          summary: "Check payment status"
+          responses:
+            '200':
+              description: "Payment service running"
