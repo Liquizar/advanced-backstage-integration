@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: auth-service
+  description: "Handles user authentication and authorization"
+  tags:
+    - backend
+    - authentication
+spec:
+  type: service
+  lifecycle: production
+  owner: liquizar
+  providesApis:
+    - auth-api
