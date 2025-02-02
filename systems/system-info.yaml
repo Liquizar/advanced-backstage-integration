@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: payment-system
+  description: "System managing payment and authentication services"
+spec:
+  owner: liquizar
+  components:
+    - auth-service
+    - payment-service
