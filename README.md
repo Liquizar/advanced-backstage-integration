@@ -8,26 +8,19 @@ This repository demonstrates a complex Backstage setup with multiple microservic
 advanced-backstage-integration/
 ├── catalog-info.yaml                # Main catalog file for the repository
 ├── README.md                        # Detailed documentation
-├── .gitignore                       # Git ignore file
 ├── /services/                       # Microservices folder
 │   ├── /auth-service/               # Authentication service
 │   │   ├── catalog-info.yaml        # Catalog for the auth service
-│   │   ├── Dockerfile               # Dockerfile for containerization
 │   │   ├── /src/                    # Source code
 │   │   │   └── app.js               # Express.js app
-│   │   └── README.md                # Service-specific documentation
 │   └── /payment-service/            # Payment service
 │       ├── catalog-info.yaml        # Catalog for the payment service
-│       ├── Dockerfile               # Dockerfile for containerization
 │       ├── /src/                    # Source code
 │       │   └── app.js               # Express.js app
-│       └── README.md                # Service-specific documentation
 ├── /apis/                           # API definitions
 │   └── payment-api.yaml             # OpenAPI spec for payment service
 ├── /systems/                        # System grouping for Backstage
-│   └── system-info.yaml             # Defines the system architecture
-└── /backstage/                      # Backstage provider configurations
-    └── github-provider.yaml         # GitHub provider configuration
+    └── system-info.yaml             # Defines the system architecture
 ```
 
 
