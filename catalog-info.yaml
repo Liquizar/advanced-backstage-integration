@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: advanced-backstage-integration
+  description: "A complex Backstage repository with multiple services and APIs"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  targets:
+    - ./services/auth-service/catalog-info.yaml
+    - ./services/payment-service/catalog-info.yaml
+    - ./apis/payment-api.yaml
+    - ./systems/system-info.yaml
