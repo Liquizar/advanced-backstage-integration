@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment-service
+  description: "Handles payment processing"
+  tags:
+    - backend
+    - payments
+spec:
+  type: service
+  lifecycle: development
+  owner: liquizar
+  consumesApis:
+    - payment-api
